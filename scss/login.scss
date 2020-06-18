@@ -1,0 +1,95 @@
+@import './resetHeader';
+@import './variable';
+@import './font';
+
+@mixin fontAndWeight($font) {
+  font-family: $font;
+  font-weight: $fontWeigth400;
+}
+
+@mixin fontSizeAndColor($font, $color) {
+  color: $color;
+  font-size: $font;
+}
+
+@mixin fontFontWeight {
+  @include fontSizeAndColor(12px, #000000);
+  @include fontAndWeight($fontOpen);
+  font-weight: 600;
+}
+
+@mixin buttonBlack {
+  @include fontSizeAndColor(12px, #ffffff);
+  @include fontAndWeight($fontOpen);
+  background-color: #000;
+  border: 0;
+  padding: 8px 14px;
+  height: 50%;
+}
+
+.breadcrumb{
+  border-bottom: 1px dashed #e7e7e7;
+  span{
+    &:nth-child(1){
+      i{
+        color: $colorGreen;
+      }
+    }
+    &:nth-child(2){
+      color: $colorGreen;
+    }
+  }
+}
+
+.login{
+  width: 83%;
+  margin: 20px auto;
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    h3{
+      @include fontSizeAndColor(28px, #212121);
+      margin-bottom: 2rem;
+      @include fontAndWeight($fontOpen);
+    }
+    button{
+      @include buttonBlack();
+    }
+  }
+  &__form{
+    background-color: #f2f2f2;
+    padding: 50px;
+    &-custormer{
+      h4{
+        @include fontAndWeight($fontOpen);
+        @include fontSizeAndColor(18px, #202020);
+        margin-bottom: 1rem;
+      }
+      span{
+        @include fontFontWeight();
+        margin-bottom: 3rem;
+        display: block;
+      }
+      p{
+        @include fontFontWeight();
+        margin-bottom: 0.5rem;
+      }
+      input{
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #e0e0e0;
+        margin-bottom: 0.5rem;
+      }
+    }
+    &-button{
+      margin-top: 2rem;
+      span{
+        @include fontFontWeight();
+        margin-right: 3rem;
+      }
+      button{
+        @include buttonBlack();
+      }
+    }
+  }
+}
