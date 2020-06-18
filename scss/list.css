@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/596c42be7e74061b11d9762459717f80?family=Thirsty+Script+Extrabold+Demo");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap");
+@font-face {
+  font-family: "utm-facebook-k-t";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("truetype");
+}
+
+@media screen and (max-width: 850px) {
+  .grid__list-left {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .grid .left2 span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .grid .grid__list-tagTitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .grid__products-menu {
+    font-size: 14px;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows img {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows img {
+    width: 50%;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main h6 {
+  font-size: 18px;
+  line-height: 35px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main h6 {
+    font-size: 16px;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-heart .fa-heart {
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-heart {
+    font-size: 12px;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-text {
+  color: #bebebe;
+  margin-left: 1rem;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-text {
+    font-size: 12px;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-content {
+  margin-top: 1rem;
+  line-height: 18px;
+  color: #666666;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-content {
+    font-size: 12px;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .image__products-price {
+  margin-top: 2rem;
+  display: inline-block;
+  color: #000000;
+  font-size: 24px;
+  font-family: "Lobster";
+  font-weight: 400;
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .image__products-price {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+}
+
+.grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count {
+  text-align: left;
+}
+
+@media screen and (max-width: 885px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy button {
+    padding: 4.5px 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy button {
+    padding: 9px 12px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy span:nth-child(2) {
+    padding: 4px 6px;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy span:nth-child(2) {
+    padding: 8px 12px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy span:nth-last-child(1) {
+    padding: 4px 6px;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count .grid__products-buy span:nth-last-child(1) {
+    padding: 8px 12px;
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count {
+    margin: 0 0 26px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main .grid__products-count {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows .gird__products-main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .grid__products-image .grid__products-threeImage .grid__products-imageRows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=list.css.map */

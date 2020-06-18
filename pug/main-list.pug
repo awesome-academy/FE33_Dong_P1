@@ -1,0 +1,95 @@
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Sản phẩm <i class="fas fa-angle-right"></i>
+  span Trang sức
+section.banner
+  .banner__discount
+    h1 Giảm giá 50%
+    .banner__discount-days
+      p Trong vòng 3 ngày 
+      small ( 25/5 - 28/5/2015 )
+section.grid
+  .grid__list
+    .grid__list-left
+      i.fas.fa-bars
+      span  Danh mục sản phẩm
+    .grid__list-listItem
+      .grid__list-listProduct
+        span MỸ PHẨM
+        i.fas.fa-caret-right
+      .grid__list-listUl
+        span TRANG SỨC
+          ul 
+            - let list = ["Vòng tay", "Nhẫn", "Lắc chân", "Phụ kiện khác", "Giày Lười Giày Mọi"]
+            each item in list 
+              li= item
+        i.fas.fa-caret-down
+      .grid__list-listProduct
+        span PHỤ KIỆN
+        i.fas.fa-caret-right
+      .grid__list-listProduct
+        span NƯỚC HOA
+        i.fas.fa-caret-right
+    .grid__list-left.left2
+      span  So sánh sản phẩm
+    .grid__list-product
+      small Bạn chưa có sản phẩm nào để so sánh
+    .grid__list-tags
+      span.grid__list-tagTitle Tag sản phẩm
+      .grid__list-tagBox
+        div
+          - let tag =["Hoa tai", "Son", "Nước hoa",]
+          each tags in tag
+            span= tags
+        div
+          - let tagTwo = [ "Giày", "Sandal", "Áo sơ mi", "Nước hoa"]
+          each tagTwos in tagTwo
+            span= tagTwos
+        div
+          - let tagThree = ["Trẻ em", "Thời trang nữ"]
+          each tagThrees in tagThree
+            span= tagThrees
+    .grid__list-image
+      img(src="../../asset/grid-blackgirl1.jpg", alt="")
+  .grid__products
+    .grid__products-menu
+      .grid__products-icons
+        i.fas.fa-th-large
+        i.fas.fa-list
+      .grid__products-page
+        i.fas.fa-caret-left
+        span.grid__products-number 
+          span 1 
+          span 2 3
+        i.fas.fa-caret-right
+    -for(let i =0; i < 3; i++)
+      .grid__products-image
+        .grid__products-threeImage
+          .grid__products-imageRows
+            img(src="../../asset/list.jpg", alt="")
+            .gird__products-main
+              h6 Mỹ phẩm châu Âu thương hiệu hàng  đầu thế giới 
+              span.grid__products-heart <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
+              span.grid__products-text ( 4 Lượt mua )
+              p.grid__products-content Tự hào được ghi là năm mà Tiffany & Co là
+                |thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                |qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                |đường cong và đường nét mượt mà.
+              span.image__products-price 355.000
+                span đ
+              .grid__products-count
+                .grid__products-buy
+                  button MUA HÀNG
+                  span <i class="fas fa-heart"></i>
+                  span <i class="fas fa-sync-alt"></i>
+    .grid__products-bottom
+      .grid__products-menu
+        .grid__products-icons
+          i.fas.fa-th-large
+          i.fas.fa-list
+        .grid__products-page
+          i.fas.fa-caret-left
+          span.grid__products-number 
+            span 1 
+            span 2 3
+          i.fas.fa-caret-right
