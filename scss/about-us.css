@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/596c42be7e74061b11d9762459717f80?family=Thirsty+Script+Extrabold+Demo");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap");
+header {
+  background-image: none;
+  margin: 0 auto;
+  width: initial;
+  height: initial;
+  background-position: initial;
+  background-repeat: initial;
+}
+
+header nav {
+  background: none;
+}
+
+@font-face {
+  font-family: "utm-facebook-k-t";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("truetype");
+}
+
+.breadcrumb {
+  border-bottom: 1px dashed #e7e7e7;
+}
+
+.breadcrumb span:nth-child(1) i {
+  color: #789629;
+}
+
+.breadcrumb span:nth-child(2) {
+  color: #789629;
+}
+
+.about {
+  width: 83%;
+  margin: 20px auto;
+}
+
+.about h3 {
+  color: #212121;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__content-image {
+  max-width: 100%;
+  margin-right: 2rem;
+}
+
+.about__content-image img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1045px) {
+  .about__content-image img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__content-image img {
+    width: 100%;
+  }
+}
+
+.about__content-text .about__content-logo {
+  font-size: 37px;
+  font-family: "Thirsty Script Extrabold Demo";
+  letter-spacing: 3px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.about__content-text .about__content-logo a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: #789629;
+  font-weight: 800;
+}
+
+.about__content-text .about__content-logo span {
+  padding-left: 10px;
+}
+
+.about__content-text h4 {
+  color: #050505;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 2.2rem;
+}
+
+.about__content-text p {
+  color: #4b4b4b;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.about__content-text .about__content-more {
+  display: inline-block;
+  color: #4b4b4b;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=about-us.css.map */
