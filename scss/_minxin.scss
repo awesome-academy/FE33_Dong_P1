@@ -1,0 +1,25 @@
+@mixin shapeLeft($color, $bdTop, $bdRight, $bdBottom, $left) {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: $bdTop solid transparent;
+	border-right: $bdRight solid $color;
+	border-bottom: $bdBottom solid transparent;
+	position: absolute;
+	top: 50%;
+	left: $left;
+	transform: translate(0,-50%);
+}
+
+@mixin shapeRigh($color, $bdTop, $bdLeft, $bdBottom, $right) {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: $bdTop solid transparent;
+	border-left: $bdLeft solid $color;
+	border-bottom: $bdBottom solid transparent;
+	position: absolute;
+	top: 50%;
+	right: $right;
+	transform: translate(0,-50%);
+}
