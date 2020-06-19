@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/596c42be7e74061b11d9762459717f80?family=Thirsty+Script+Extrabold+Demo");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro");
+@font-face {
+  font-family: "utm-facebook-k-t";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("truetype");
+}
+
+header {
+  background-image: none;
+  margin: 0 auto;
+  width: initial;
+  height: initial;
+  background-position: initial;
+  background-repeat: initial;
+}
+
+header nav {
+  background: none;
+}
+
+.breadcrumb {
+  cursor: pointer;
+  width: 83%;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.breadcrumb span {
+  font-size: 12px;
+  color: #737373;
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+.breadcrumb span i {
+  padding-left: 8px;
+}
+
+.breadcrumb span:nth-child(3) {
+  color: #789629;
+}
+
+.breadcrumb span:nth-child(3) i {
+  color: #789629;
+}
+
+.breadcrumb span:nth-child(4) {
+  color: #789629;
+}
+
+.bangles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+  width: 83%;
+}
+
+.bangles img {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .bangles img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.bangles div {
+  margin-left: 18px;
+}
+
+.bangles div .bangles__title {
+  font-size: 21px;
+  color: #595959;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
+.bangles div small {
+  font-size: 13px;
+  line-height: 21px;
+  color: #737373;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.bangles div .bangles__title-price {
+  font-size: 29px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Lobster";
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.bangles div .bangles__title-price span {
+  color: #cdcdcd;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.bangles div .bangles__title-description {
+  font-size: 13px;
+  line-height: 21px;
+  color: #737373;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+.bangles div .bangless__title-color {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+}
+
+.bangles div .bangless__title-color input {
+  display: block;
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #cacaca;
+  margin-top: 14px;
+  color: #b4b4b4;
+}
+
+.bangles div .bangless__title-color input::after {
+  content: '\00a2';
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.bangles div .bangless__title-size {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+}
+
+.bangles div .bangless__title-size input {
+  display: block;
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #cacaca;
+  margin-top: 14px;
+  color: #b4b4b4;
+}
+
+.bangles div .bangless__title-size input::after {
+  content: '\00a2';
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.bangles div .bangless__title-count {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+}
+
+.bangles div .bangless__title-buy {
+  margin-top: 14px;
+  margin-left: 0;
+}
+
+.bangles div .bangless__title-buy button {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px 12px;
+  color: #1a1a1a;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #e6e6e6;
+  border-radius: 15px;
+}
+
+.bangles div .bangless__title-buy span {
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a1a;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+}
+
+.bangles div .bangless__title-buy span:nth-last-child(1) {
+  background-color: #ffffff;
+  padding: 8px 12px;
+  color: #000;
+  border-radius: 12px;
+  border: 2px solid #e6e6e6;
+}
+
+.bangles div .bangless__title-buy span:nth-last-child(2) {
+  background-color: #789629;
+  padding: 8px 12px;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1090px) {
+  .bangles div .bangless__title-buy span {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bangles div .bangless__title-buy span {
+    margin-left: 8px;
+  }
+}
+
+.bangles div .bangless__title-return {
+  margin-top: 30px;
+  margin-left: 0;
+  font-size: 12px;
+  line-height: 20px;
+  color: #818181;
+  font-family: "Open Sans";
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bangles div .bangless__title-return span {
+  white-space: nowrap;
+}
+
+.bangles div .bangless__title-return span span {
+  color: #c72527;
+  white-space: nowrap;
+}
+
+.bangles div .bangless__title-return img {
+  margin-left: 21px;
+  width: 65%;
+}
+
+@media screen and (max-width: 800px) {
+  .bangles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.ring {
+  width: 83%;
+  margin: 20px auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.ring__title-left {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 12px;
+}
+
+.ring__title-left span {
+  font-size: 24px;
+  line-height: 24px;
+  color: #131313;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  white-space: nowrap;
+}
+
+.ring__title-left span:nth-child(2) {
+  color: #818181;
+  margin-left: 30px;
+}
+
+.ring__title-left span:nth-child(3) {
+  color: #818181;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1090px) {
+  .ring__title-left span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  .ring__title-left span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+.ring__title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1090px) {
+  .ring__title-content img {
+    width: 50%;
+  }
+}
+
+.ring__title-content .ring__title-text h5 {
+  font-size: 21px;
+  line-height: 18px;
+  color: #3e3e3e;
+  font-family: "Open Sans";
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .ring__title-content .ring__title-text h5 {
+    font-size: 16px;
+  }
+}
+
+.ring__title-content .ring__title-text p {
+  margin-top: 2em;
+  color: #818181;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1090px) {
+  .ring__title-content .ring__title-text p {
+    font-size: 12px;
+  }
+}
+
+.ring__title-content .ring__title-text span {
+  display: inline-block;
+  background-color: #e6e6e6;
+  width: 13%;
+  height: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .ring__title-content .ring__title-text:nth-child(odd) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ring__title-content .ring__title-text {
+    margin-top: 35px;
+  }
+}
+
+.ring__title-content:nth-child(odd) {
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  .ring__title-content:nth-child(odd) {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ring__title-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.ring__buy-title {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 12px;
+}
+
+.ring__buy-title span {
+  font-size: 24px;
+  line-height: 24px;
+  color: #131313;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1090px) {
+  .ring__buy-title span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .ring__buy-title span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+.ring__buy-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dashed #e6e6e6;
+  margin-top: 28px;
+}
+
+.ring__buy-desc div h4 {
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.ring__buy-desc div i {
+  font-size: 11px;
+  letter-spacing: 3px;
+  line-height: 20px;
+  color: #131313;
+}
+
+.ring__buy-desc div i span {
+  color: #989898;
+  letter-spacing: initial;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.ring__buy-desc div p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Lobster";
+  font-weight: 400;
+}
+
+.ring__buy-desc:nth-last-child(1) {
+  border: none;
+}
+
+.ring__buy-desc:nth-child(4) {
+  border: none;
+}
+
+.ring__buy .two {
+  margin-top: 50px;
+}
+
+.ring__buy .two span {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1090px) {
+  .ring__buy .two span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .ring__buy .two span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ring__buy {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main-detail.css.map */
