@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("//db.onlinewebfonts.com/c/596c42be7e74061b11d9762459717f80?family=Thirsty+Script+Extrabold+Demo");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap");
+header {
+  background-image: none;
+  margin: 0 auto;
+  width: initial;
+  height: initial;
+  background-position: initial;
+  background-repeat: initial;
+}
+
+header nav {
+  background: none;
+}
+
+@font-face {
+  font-family: "utm-facebook-k-t";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11310/UTM FacebookR K-T.ttf") format("truetype");
+}
+
+.breadcrumb {
+  border-bottom: 1px dashed #e7e7e7;
+}
+
+.cart {
+  width: 83%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    overflow-y: scroll;
+  }
+}
+
+.cart h3 {
+  color: #212121;
+  font-size: 28px;
+  margin-bottom: 2rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.cart__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart__table tr th {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #212121;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #e7e7e7;
+  padding: 12px;
+}
+
+.cart__table tr td {
+  border: 1px solid #e7e7e7;
+  text-align: center;
+  padding: 30px;
+}
+
+.cart__table tr td .cart__table-name {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #212121;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cart__table tr td .cart__table-price {
+  font-family: "Lobster";
+  font-weight: 400;
+  color: #212121;
+  font-size: 13px;
+  position: relative;
+}
+
+.cart__table tr td .cart__table-price span {
+  position: absolute;
+  top: -3px;
+  left: 48px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.cart__table tr td .cart__table-quantity {
+  padding: 7px 12px;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.cart__table tr td i {
+  font-size: 25px;
+}
+
+.cart__button {
+  margin: 2rem 0 3rem 0;
+  text-align: right;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.cart__button span {
+  background: #000000;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+.cart__button span:nth-child(1) {
+  padding: 8px 12px;
+}
+
+@media screen and (max-width: 425px) {
+  .cart__button span:nth-child(1) {
+    padding: 4px 6px;
+  }
+}
+
+.cart__button span:nth-child(2) {
+  padding: 8px 24px;
+}
+
+@media screen and (max-width: 425px) {
+  .cart__button span:nth-child(2) {
+    padding: 4px 12px;
+  }
+}
+
+.cart__button span:nth-child(3) {
+  padding: 8px 24px;
+  background-color: #789629;
+}
+
+@media screen and (max-width: 425px) {
+  .cart__button span:nth-child(3) {
+    padding: 4px 12px;
+  }
+}
+/*# sourceMappingURL=shopping-cart.css.map */

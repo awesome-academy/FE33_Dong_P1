@@ -1,0 +1,26 @@
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Đăng ký
+section.register
+  h3 ĐĂNG KÝ
+  .register__form
+    .register__form-person
+      h4 THÔNG TIN CÁ NHÂN
+      mixin form(title, type)
+        p=title
+        input(type=type)
+      +form('Tên trước *', 'text')
+      +form('Tên sau *', 'text')
+      +form('Email *', 'email')
+      +form('Password *', 'password')
+      span Đăng ký nhận bản tin 
+    .register__form-login
+      h4 THÔNG TIN ĐĂNG NHẬP
+      +form('Mật khẩu *', 'password')
+      +form('Xác nhận mật khẩu *', 'password')
+    .register__form-button
+      button.register__form-send GỬI
+      button.register__form-back 
+        i.fas.fa-long-arrow-alt-left 
+        span QUAY LẠI
+        

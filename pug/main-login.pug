@@ -1,0 +1,19 @@
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Đăng nhập
+section.login
+  .login__title
+    h3 ĐĂNG NHẬP
+    button ĐĂNG KÝ
+  .login__form
+    .login__form-custormer
+      h4 KHÁCH HÀNG ĐĂNG KÝ
+      span Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
+      mixin form(title, type)
+        p=title
+        input(type=type)
+      +form('Địa chỉ email *', 'email')
+      +form('Password *', 'password')
+    .login__form-button
+      span Quên Mật Khẩu?
+      button ĐĂNG NHẬP
