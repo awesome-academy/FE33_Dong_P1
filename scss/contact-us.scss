@@ -1,0 +1,88 @@
+@import './headerNot';
+@import './resetHeader';
+@import './variable';
+@import './font';
+@import './minxin';
+.breadcrumb {
+  border-bottom: 1px dashed #e7e7e7;
+  span {
+    &:nth-child(1) {
+      i {
+        color: $colorGreen;
+      }
+    }
+    &:nth-child(2) {
+      color: $colorGreen;
+    }
+  }
+}
+
+.contact {
+  width: 83%;
+  margin: 20px auto;
+  h3 {
+    @include fontSizeAndColor(28px, #212121);
+    margin-bottom: 2rem;
+    @include fontAndWeight($fontOpen);
+  }
+  &__content {
+    display: flex;
+    width: 100%;
+    &-map {
+      margin-right: 30px;
+      img{
+        height: 100%;
+        @media screen and (max-width: 1240px) {
+          width: 330px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+    &-send {
+      width: 100%;
+      h6 {
+        @include fontAndWeight($fontOpen);
+        @include fontSizeAndColor(16px, #000000);
+        text-transform: uppercase;
+      }
+      .contact__content-all {
+        // display: flex;
+        margin: 1.7rem 0;
+        &:nth-child(4){
+          input{
+            height: 100px;
+          }
+        }
+        p {
+          @include fontAndWeight($fontOpen);
+          @include fontSizeAndColor(12px, #000000);
+          font-weight: 700;
+          float: left;
+          width: 15%;
+          padding-top: 8px;
+        }
+        input {
+          width: 50%;
+          padding: 6px;
+          border: 1px solid #e7e7e7;
+        }
+      }
+      .contact__content-button{
+        width: 65%;
+        text-align: right;
+        button {
+          @include fontAndWeight($fontOpen);
+          @include fontSizeAndColor(12px, #ffffff);
+          background: #000;
+          border: 0;
+          padding: 6px 18px;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
