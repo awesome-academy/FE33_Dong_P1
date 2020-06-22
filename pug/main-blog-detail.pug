@@ -1,0 +1,61 @@
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Liên hệ
+section.blogTitle
+  h3 BLOG
+section.blogDetail
+  .blogDetail__news
+    h5 BÀI VIẾT MỚI NHẤT
+    .blogDetail__news-card
+      - let cards = ["../../../../asset/blog-detail-1.jpg", "../../../../asset/blog-detail-2.jpg", "../../../../asset/blog-detail-3.jpg"]
+      each card in cards
+        .blogDetail__news-cardItem
+          img(src=card, alt="")
+          .blogDetail__news-text
+            span.blogDetail__news-day 11
+              span.blogDetail__news-month / Tháng 5
+            smal.blogDetail__news-author Đăng bởi bởi Giangle
+    .blogDetail__news-tag
+      h6 BLOG TAGS
+      .blogDetail__news-allItem
+        .blogDetail__news-item  
+          - let tagOne = ["Đồng hồ", "Túi", "Phụ kiện"]
+          each tag1 in tagOne
+            span=tag1
+        .blogDetail__news-item  
+          - let tagTwo = ["Giày", "Sandal" ,"Áo sơ mi", "Nước hoa"]
+          each tag2 in tagTwo
+            span=tag2
+        .blogDetail__news-item  
+          - let tagThree = ["Trẻ em", "Thời trang nữ"]
+          each tag3 in tagThree
+            span=tag3
+      .blogDetail__news-video
+        h6 LATEST VIDEO 
+        .blogDetail__news-double
+          img(src="../../asset/blog-detail-video1.jpg", alt="")
+          //- .blogDetail__news-icon
+          //-   i.fas.fa-caret-right
+  .blogDetail__banner
+    img(src="../../asset/blog-detail-banner.jpg", alt="")
+    .blogDetail__banner-content
+      h2 Nàng béo không ngại diện váy áo nổi bật
+      p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.Trong tiết xuân hè, nàng ngoại cỡ thắp sáng phong cách bằng quần họa tiết nhiệt đới đi kèm áo sơ mi nhã nhặn.Trang phục họa tiết điện tử được nàng phối cùng chân váy kẻ caro, làm nên style vừa hiện đại, vừa phảng phất nét cổ điển.Lối diện đồ hàng ngày đơn giản, khỏe khoắn của cô khi kết hợp chất liệu jean.Nữ blogger rực rỡ khi hòa trộn các gam đỏ, hồng, tím... một cách vui tươi, kèm theo các phụ kiện điệu đà. 
+      small Bởi NamTran ( 27 / 05 / 2015 )
+      .blogDetail__banner-more
+        a(href="#") Đọc thêm <i class="fas fa-angle-right"></i>
+        a(href="#") 23 Bình luận
+      .blogDetail__banner-tag
+        span Tag : 
+        span Men
+      .blogDetail__banner-form
+        h5 Đóng góp ý kiến
+        mixin listInput(name, type)
+          .blogDetail__banner-input
+            p= name
+            input(type=type)
+        +listInput('Tên *', 'text')
+        +listInput('Email *', 'email')
+        +listInput('ý kiến *', 'text')
+        .blogDetail__banner-button 
+          button GỬI Ý KIẾN
