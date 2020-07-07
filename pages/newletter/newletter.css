@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+}
+
+.overlay:not(:target) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay .overplay__popup {
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+.overlay .overplay__popup .close {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.overlay .overplay__popup img {
+  margin-top: 25%;
+  margin-left: -15%;
+}
+/*# sourceMappingURL=newletter.css.map */

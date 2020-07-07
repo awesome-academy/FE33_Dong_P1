@@ -1,0 +1,98 @@
+@import '../../components/headerNot';
+@import '../../common/resetHeader';
+@import '../../common/variable';
+@import '../../common/font';
+@import '../../common/minxin';
+
+
+.breadcrumb{
+  border-bottom: 1px dashed #e7e7e7;
+}
+
+.cart{
+  width: 83%;
+  margin: 20px auto;
+  @media screen and (max-width:768px) {
+    overflow-y: scroll;
+  }
+  h3{
+    @include fontSizeAndColor(28px, #212121);
+    margin-bottom: 2rem;
+    @include fontAndWeight($fontOpen)
+  }
+  &__table{
+    width: 100%;
+    border-collapse: collapse;
+    tr{
+      th{
+        @include fontAndWeight($fontLato);
+        text-transform: uppercase;
+        @include fontSizeAndColor(16px,#212121);
+        background-color: #f9f9f9;
+        border: 1px solid #e7e7e7;
+        padding: 12px ;
+      }
+      td{
+        border: 1px solid #e7e7e7;
+        text-align: center;
+        padding: 30px;
+        .cart__table-name{
+          @include fontAndWeight($fontOpen);
+          @include fontSizeAndColor(13px,#212121);
+          white-space: nowrap;
+        }
+        .cart__table-price{
+          @include fontAndWeight($fontLobter);
+          @include fontSizeAndColor(13px,#212121);
+          position: relative;
+          span{
+            position: absolute;
+            top: -3px;
+            left: 48px;
+            font-size: 10px;
+            font-weight: bold;
+          }
+        }
+        .cart__table-quantity{
+          padding: 7px 12px;
+          background: transparent;
+          border: 1px solid #e1e1e1;
+          @include fontAndWeight($fontRoboto);
+        }
+        i{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  &__button{
+    margin: 2rem 0 3rem 0;
+    text-align: right;
+    @include fontAndWeight($fontOpen);
+    @include fontSizeAndColor(12px,#ffffff);
+    span{
+      background: #000000;
+      margin-left: 8px;
+      text-transform: uppercase;
+      &:nth-child(1){
+        padding: 8px 12px;
+        @media screen and (max-width:425px) {
+          padding: 4px 6px;
+        }
+      }
+      &:nth-child(2){
+        padding: 8px 24px;
+        @media screen and (max-width:425px) {
+          padding: 4px 12px;
+        }
+      }
+      &:nth-child(3){
+        padding: 8px 24px;
+        @media screen and (max-width:425px) {
+          padding: 4px 12px;
+        }
+        background-color: $colorGreen;
+      }
+    }
+  }
+}

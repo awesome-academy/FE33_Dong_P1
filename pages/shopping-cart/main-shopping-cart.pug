@@ -1,0 +1,19 @@
+include ../../common/mixin.pug
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Sản phẩm <i class="fas fa-angle-right"></i>
+  span Trang sức
+section.cart
+  h3 GIỎ HÀNG
+  table.cart__table
+    tr
+      - let listTable = ["Ảnh", "Tên sản phẩm", "Giá", "Số Lượng", "Tổng số", "Xóa"]
+      each list in listTable 
+        th= list
+    +listShopping('350.000',1)
+    +listShopping('690.000',2)
+
+  .cart__button
+    - let itemButton = ["tiếp tục mua hàng", "xóa", "cập nhật"]
+    each item in itemButton
+      span= item
