@@ -1,0 +1,84 @@
+@import "../../common/reset";
+@import '../../common/variable';
+@import '../../common/font';
+@import '../../common/minxin';
+
+@mixin borderRadius {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+main {
+  margin-top: 5%;
+  .pageError {
+    img {
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .pageText {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #34474f;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2rem;
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px){
+      font-size: 12px;
+    }
+  }
+  .pageInput{
+    text-align: center;
+    position: relative;
+    input{
+      padding: 16px 12px;
+      width: 30%;
+      @include borderRadius();
+      border: 1px solid #34474f;
+      margin-top: 2rem;
+      @media screen and (max-width: 768px){
+        width: 50%;
+      }
+      @media screen and (max-width: 768px){
+        width: 55%;
+      }
+    }
+    .fa-search{
+      font-size: 30px;
+      color: #212121;
+      position: absolute;
+      top: 50%;
+      right: 36%;
+      @media screen and (max-width: 768px){
+        right: 28%;
+      }
+    }
+  }
+  .pageContact{
+    text-align: center;
+    @include fontAndWeight($fontOpen);
+    @include fontSizeAndColor(16px, #212121);
+    text-transform: uppercase;
+    margin-top: 2rem;
+    @media screen and (max-width: 768px){
+      @include fontSizeAndColor(12px, #212121);
+    }
+    @media screen and (max-width: 480px){
+      width: 90%;
+    }
+    span{
+      // margin: 5rem;
+      &:nth-child(1){
+        border-right: 1px solid #334444;
+        padding-right: 3rem;
+        margin: 3rem;
+      }
+    }
+  }
+}

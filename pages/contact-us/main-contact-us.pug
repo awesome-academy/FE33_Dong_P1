@@ -1,0 +1,16 @@
+include ../../common/mixin.pug
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Liên hệ
+section.contact
+  h3 LIÊN HỆ
+    .contact__content
+      .contact__content-map 
+        img(src="../../../asset/contact-us.jpg", alt="")
+      .contact__content-send
+        h6 Gửi Email cho chúng tôi
+        +listInputContact('Tên *', 'text')
+        +listInputContact('Email *', 'email')
+        +listInputContact('Tin nhắn *', 'text')
+        .contact__content-button  
+          button GỬI

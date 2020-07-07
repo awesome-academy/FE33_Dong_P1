@@ -1,0 +1,65 @@
+include ../../common/mixin.pug
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Sản phẩm <i class="fas fa-angle-right"></i>
+  span Trang sức <i class="fas fa-angle-right"></i>
+  span Lắc tay
+section.bangles
+  img(src="../../../asset/123.jpg", alt="")
+  div
+    h3.bangles__title Lắc tay TYFFANY XU HƯỚNG MỚI NHẤT 
+    small TYFFANY MS 3201
+    p.bangles__title-price 955.000đ 
+      span 999.000đ
+    p.bangles__title-description 
+      | Không thể phủ nhận, thời trang và phong cách chính là “tuyên ngôn” không 
+      | lời mạnh mẽ nhất của mỗi người phụ nữ. Do đó, việc mua sắm thời trang trở 
+      | thành niềm vui, và có khi là nguồn cảm hứng vô tận để phái đẹp sống vui, 
+      | sống đẹp hơn trong mắt nửa còn lại của thế giới. Để F5 tủ đồ của mình trước
+      | những xu hướng ngày một đa dạng hơn trong thế giới thời trang, nhiều chị 
+      | em không ngần ngại chi tiêu “mạnh tay” để sở hữu những 
+      | món đồ yêu thích.
+    p.bangless__title-color Màu Sắc
+      input(type="text" placeholder="Màu bạc" )
+    p.bangless__title-size SIZE
+      input(type="text" placeholder="12")
+    p.bangless__title-count SỐ LƯỢNG
+      .bangless__title-buy
+        button MUA HÀNG
+        span <i class="fas fa-heart"></i>
+        span <i class="fas fa-sync-alt"></i>
+    .bangless__title-return
+      span Shipping &  
+        span Returns
+      img(src="../../../asset/detail-bangles.jpg", alt="")
+section.ring
+  .ring__title
+    .ring__title-left 
+      span Đặc điểm nổi bật 
+      span Thông tin sản phẩm
+      span Đánh giá
+    +ringImgTop("../../../asset/vong1.jpg")
+    +ringImgBot("../../../asset/vong2.jpg")
+    +ringImgTop("../../../asset/vong3.jpg")
+    +ringImgBot("../../../asset/vong4.jpg")
+  .ring__buy 
+    .ring__buy-title
+      span Sản phẩm bán chạy
+    - for (let i = 0; i < 3; i++)
+      .ring__buy-desc
+        img(src="../../../asset/vong-right.jpg", alt="")
+        div
+          h4 Mỹ phẩm châu Âu
+          i.fas.fa-heart <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i> 
+            span ( 4 Lượt mua )
+          p 355.000đ
+    .ring__buy-title.two
+      span Sản phẩm mua nhiều
+    - for (let i = 0; i < 4; i++)
+      .ring__buy-desc
+        img(src="../../../asset/vong-right.jpg", alt="")
+        div
+          h4 Mỹ phẩm châu Âu
+          i.fas.fa-heart <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i> 
+            span ( 4 Lượt mua )
+          p 355.000đ

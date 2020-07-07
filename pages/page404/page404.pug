@@ -1,0 +1,18 @@
+extends ../../components/block.pug 
+block linkCSS 
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+  link(rel='stylesheet', href='../../../pages/page404/page404.css')
+block titlePage 
+  title Page-404 
+block content 
+  main
+    section.pageError
+      img(src="../../../asset/page-404.jpg", alt="")
+    section.pageText
+      p Đây không phải là trang web bạn đang tìm kiếm
+    section.pageInput
+      input(type="text") 
+      i.fas.fa-search
+    section.pageContact
+      span Liên hệ
+      span Trang chủ

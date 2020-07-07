@@ -1,0 +1,22 @@
+include ../../common/mixin.pug
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Blog
+section.blog
+  h3 BLOG
+  +icon
+  .blog__content
+    - let image = ["../../../asset/blog-1.jpg","../../../asset/blog-2.jpg", "../../../asset/blog-3.jpg","../../../asset/blog-4.jpg","../../../asset/blog-5.jpg", "../../../asset/blog-6.jpg","../../../asset/blog-7.jpg","../../../asset/blog-8.jpg", "../../../asset/blog-9.jpg"]
+    each imageItem in image
+      .blog__content-big
+        img(src= imageItem, alt='')
+        span.blog__content-review Review son kem Bourjois Velvet
+        p.blog__content-desc
+          | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+          | cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+        span.blog__content-name Bởi NamTran ( 27 / 05 / 2015 )
+        .blog__content-script
+          a(href="#") Đọc thêm
+            i.fas.fa-angle-right
+          a(href="#") 23 Bình luận
+  +icon

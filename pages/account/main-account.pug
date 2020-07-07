@@ -1,0 +1,30 @@
+include ../../common/mixin.pug
+section.breadcrumb
+  span Home <i class="fas fa-angle-right"></i>
+  span Tài khoản
+
+section.cart
+  .cart__left
+    h3 TÀI KHOẢN
+    table.cart__table
+      tr
+        - let listTable = ["Order", "Date", "TÌNH TRẠNG THÁNH TOÁN", "TỔNG", "NỢ"]
+        each list in listTable 
+          th= list
+      +list('Đã thanh toán','350.000', 0)
+      +list('Đã thanh toán','350.000', 0)
+      +list('Đã thanh toán','350.000', 0)
+      +list('Thanh toán 50%','350.000', '275.000')
+  .cart__right
+    h5 CHI TIẾT TÀI KHOẢN 
+    .cart__right-desc 
+      .cart__right-name
+        i.fas.fa-user
+        p GiangLe
+          span Leanhgiang89@gmail.com
+      .cart__right-local
+        i.fas.fa-map-marker-alt
+        p Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình Hà Nội
+      .cart__right-phone  
+        i.fa.fa-phone
+        p (04) 3786 8904
